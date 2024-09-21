@@ -604,3 +604,7 @@ DATASETS.update({
     f"dbpedia-openai-{n//1000}k-angular": lambda out_fn, i=n: dbpedia_entities_openai_1M(out_fn, i)
     for n in range(100_000, 1_100_000, 100_000)
 })
+
+if __name__ == "__main__":
+    get_dataset("gist-960-euclidean")
+    get_dataset("deep-image-96-angular")
